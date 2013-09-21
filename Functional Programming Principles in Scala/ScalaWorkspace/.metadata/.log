@@ -1,0 +1,394 @@
+!SESSION 2013-09-21 12:42:35.461 -----------------------------------------------
+eclipse.buildId=3.0.1-vfinal-20130718-1727-Typesafe
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2013-09-21 12:46:58.834
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:30.552
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:38.693
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:42.586
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:44.615
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:47.631
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:49.156
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:50.178
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:17:54.200
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:21:41.135
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:21:42.138
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:21:47.164
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:21:53.179
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:21:55.216
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:21:58.248
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+
+!ENTRY org.scala-ide.sdt.core 4 0 2013-09-21 14:22:03.773
+!MESSAGE Error during askOption
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.nameString(PimpedTrees.scala:317)
+	at scala.tools.refactoring.common.PimpedTrees$TreeMethodsForPositions.namePosition(PimpedTrees.scala:226)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.eclipse.semantichighlighting.classifier.SafeSymbol$$anonfun$5.apply(SafeSymbol.scala:109)
+	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:344)
+	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)

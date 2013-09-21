@@ -1,0 +1,11 @@
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
+[0m[[0minfo[0m] [0mStarting scala interpreter...[0m
+[0m[[0mdebug[0m] [0m  Boot classpath: C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes;C:\Users\Bill Neely\.sbt\boot\scala-2.10.2\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0m  Classpath: C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\example\target\scala-2.10\classes;C:\Users\Bill Neely\.sbt\boot\scala-2.10.2\lib\scala-compiler.jar;C:\Users\Bill Neely\.sbt\boot\scala-2.10.2\lib\jansi.jar;C:\Users\Bill Neely\.sbt\boot\scala-2.10.2\lib\scala-reflect.jar;C:\Users\Bill Neely\.sbt\boot\scala-2.10.2\lib\jline.jar[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

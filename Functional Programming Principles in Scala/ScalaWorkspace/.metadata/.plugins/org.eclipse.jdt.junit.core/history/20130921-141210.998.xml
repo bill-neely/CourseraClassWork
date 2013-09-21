@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ListsSuite" project="progfun-example" tests="12" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="example.ListsSuite" incomplete="true">
+    <testcase name="one plus one is two" classname="example.ListsSuite" time="0.016"/>
+    <testcase name="one plus two is three?" classname="example.ListsSuite" time="0.002"/>
+    <testcase name="details why one plus one is not three" classname="example.ListsSuite" time="0.006"/>
+    <testcase name="intNotZero throws an exception if its argument is 0" classname="example.ListsSuite" time="0.006"/>
+    <testcase name="sum of a few numbers" classname="example.ListsSuite" incomplete="true"/>
+    <testcase name="sum of mixed sign numbers" classname="example.ListsSuite" incomplete="true"/>
+    <testcase name="sum of empty list is 0" classname="example.ListsSuite" incomplete="true"/>
+    <testcase name="max of a few numbers" classname="example.ListsSuite" incomplete="true"/>
+    <testcase name="max of some mixed sign numbers" classname="example.ListsSuite" incomplete="true"/>
+    <testcase name="max of list of all negative numbers" classname="example.ListsSuite" incomplete="true"/>
+    <testcase name="max of list of a single number" classname="example.ListsSuite" incomplete="true"/>
+    <testcase name="max of empty list is java.util.NoSuchElementException" classname="example.ListsSuite" incomplete="true"/>
+  </testsuite>
+</testrun>
