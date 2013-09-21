@@ -1,8 +1,14 @@
 INDEX VERSION 1.126+C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaWorkspace\.metadata\.plugins\org.eclipse.jdt.core
-2141450616.index
-977184355.index
-2292053920.index
-1451691174.index
-384641357.index
 203954243.index
 2380175872.index
+977184355.index
+384641357.index
+3826509188.index
+4029694880.index
+2284070501.index
+2292053920.index
+3001372555.index
+1454421063.index
+2141450616.index
+1451691174.index
+2672588692.index

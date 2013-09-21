@@ -1,0 +1,5 @@
+package greeter
+
+object TailRecursion {
+  println("Welcome to the Scala worksheet")
+}

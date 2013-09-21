@@ -1,0 +1,22 @@
+package greeter
+
+object Worksheet {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+
+  def abs(x: Double) = if (x <= 0) -x else x      //> abs: (x: Double)Double
+  
+  def sqrt(x: Double) = sqrtIter(1, x)            //> sqrt: (x: Double)Double
+
+  def sqrtIter(guess: Double, x: Double): Double = (
+    if (isGoodEnough(guess, x)) guess
+    else sqrtIter(improveGuess(guess, x), x))     //> sqrtIter: (guess: Double, x: Double)Double
+    
+  def isGoodEnough(guess:Double, x:Double): Boolean =
+    abs(guess * guess - x) < .000000000001        //> isGoodEnough: (guess: Double, x: Double)Boolean
+
+  def improveGuess(guess: Double, x: Double): Double =
+    (guess + x / guess) / 2                       //> improveGuess: (guess: Double, x: Double)Double
+    
+    
+  sqrt(36)                                        //> res0: Double = 6.0
+}
