@@ -14,7 +14,7 @@
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
 [0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\recfun\src\main\scala\recfun\Main.scala)[0m
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\recfun\target\scala-2.10\classes...[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 4df935ec, interfacing (CompilerInterface) with Scala compiler version 2.10.2[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 71eb5d7f, interfacing (CompilerInterface) with Scala compiler version 2.10.2[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-deprecation[0m
 [0m[[0mdebug[0m] [0m	-feature[0m
@@ -24,7 +24,7 @@
 [0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes;C:\Users\Bill Neely\.sbt\boot\scala-2.10.2\lib\scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\recfun\target\scala-2.10\classes[0m
-[0m[[0mdebug[0m] [0mScala compilation took 11.259958929 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 16.636504269 s[0m
 [0m[[0mdebug[0m] [0mStep 2 changed sources and immdediate dependencies:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mNon-trivial strongly connected components: [0m

@@ -8,6 +8,15 @@ import org.scalatest.junit.JUnitRunner
 @RunWith(classOf[JUnitRunner])
 class PascalSuite extends FunSuite {
   import Main.pascal
+
+  test("pascal: col=0,row=0") {
+    assert(pascal(0, 0) === 1)
+  }
+  
+  test("pascal: col=0,row=1") {
+    assert(pascal(0, 1) === 1)
+  }
+
   test("pascal: col=0,row=2") {
     assert(pascal(0, 2) === 1)
   }
@@ -24,23 +33,7 @@ class PascalSuite extends FunSuite {
     assert(pascal(7, 10) === 120)
   }
 
-  test("pascal: col=0,row=0") {
-    assert(pascal(0, 0) === 1)
-  }
-
-  test("pascal: col=0,row=1") {
-    assert(pascal(0, 1) === 1)
-  }
-
-  test("pascal: col=3,row=1") {
-    assert(pascal(3, 1) === 0)
-  }
-
-  test("pascal: col=2,row=-1") {
-    assert(pascal(2, -1) === 0)
-  }
-
-  test("pascal: col=25,row=20") {
+  test("pascal: col=6,row=20") {
     assert(pascal(6, 20) === 38760)
   }
 }

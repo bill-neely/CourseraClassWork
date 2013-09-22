@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="175" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -19,8 +19,9 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="scala.tools.eclipse.ScalaSourceFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.scalaide.worksheet.editors.ScriptEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="scala.tools.eclipse.ScalaClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="scala.tools.eclipse.ScalaSourceFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.scalaide.worksheet.editors.ScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -29,17 +30,35 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.scalaide.worksheet.editors.ScriptEditor" name="Worksheet.sc" partName="Worksheet.sc" path="C:/Users/Bill Neely/Documents/CourseraClassWork/Functional Programming Principles in Scala/ScalaAssignments/recfun/src/main/scala/recfun/Worksheet.sc" title="Worksheet.sc" tooltip="progfun-recfun/src/main/scala/recfun/Worksheet.sc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-recfun/src/main/scala/recfun/Worksheet.sc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="127" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Main.scala" partName="Main.scala" path="C:/Users/Bill Neely/Documents/CourseraClassWork/Functional Programming Principles in Scala/ScalaAssignments/recfun/src/main/scala/recfun/Main.scala" title="Main.scala" tooltip="progfun-recfun/src/main/scala/recfun/Main.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-recfun/src/main/scala/recfun/Main.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="840" selectionTopPixel="270"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
 <viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
 </view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors (1 item)"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -82,12 +101,18 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.scala-ide.sdt.core.perspective">
+<perspectives activePart="scala.tools.eclipse.ScalaSourceFileEditor" activePerspective="org.scala-ide.sdt.core.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="scala.tools.eclipse.PerspectiveFactory" id="org.scala-ide.sdt.core.perspective" label="Scala"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -144,11 +169,12 @@
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="explorer"/>
-<info folder="true" part="problems" ratio="0.74958813" ratioLeft="455" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
+<info folder="true" part="problems" ratio="0.85645163" ratioLeft="531" ratioRight="89" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -172,9 +198,261 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="scala.texteditor.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<perspective_action id="org.scala-ide.sdt.core.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74959874" ratioLeft="467" ratioRight="156" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4496788" ratioLeft="210" ratioRight="257" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/progfun-recfun/src/main/scala/recfun/Worksheet.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-recfun/src/main/scala/recfun/Main.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-recfun/src/test/scala/recfun/PascalSuite.scala"/>
+</editors>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="168" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="168" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="168" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="451" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="447" y="0"/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="413" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="742" y="0"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="413" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="413" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="278" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="649" y="174"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position info="not_deleted" x="475" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="448" y="199"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position info="not_deleted" x="436" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="300" y="146"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position info="not_deleted" x="1135" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="446" y="0"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position info="not_deleted" x="684" y="0"/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="825" y="376"/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="1045" y="0"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position info="not_deleted" x="1064" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="1045" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="823" y="0"/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="695" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="1208" y="0"/>
+</item>
+<item historyLabel="Worksheet.sc" index="0">
+<position info="not_deleted" x="127" y="0"/>
+</item>
+<item historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="1208" y="0"/>
+</item>
+<item historyLabel="PascalSuite.scala" index="2">
+<position info="not_deleted" x="695" y="0"/>
+</item>
+<item active="true" historyLabel="Main.scala" index="1">
+<position info="not_deleted" x="1208" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -194,14 +472,17 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="PascalSuite.scala" tooltip="progfun-recfun/src/test/scala/recfun/PascalSuite.scala">
 <persistable path="/progfun-recfun/src/test/scala/recfun/PascalSuite.scala"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="CountChangeSuite.scala" tooltip="progfun-recfun/src/test/scala/recfun/CountChangeSuite.scala">
-<persistable path="/progfun-recfun/src/test/scala/recfun/CountChangeSuite.scala"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="scala.tools.eclipse.ScalaClassFileEditor" name="LowPriorityImplicits.class" tooltip="scala.LowPriorityImplicits">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=HelloWorld/C:\/eclipse\/configuration\/org.eclipse.osgi\/bundles\/264\/1\/.cp\/lib\/scala-library.jar&lt;scala(LowPriorityImplicits.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Main.scala" tooltip="progfun-recfun/src/main/scala/recfun/Main.scala">
 <persistable path="/progfun-recfun/src/main/scala/recfun/Main.scala"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" name="Worksheet.sc" tooltip="progfun-recfun/src/main/scala/recfun/Worksheet.sc">
 <persistable path="/progfun-recfun/src/main/scala/recfun/Worksheet.sc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="CountChangeSuite.scala" tooltip="progfun-recfun/src/test/scala/recfun/CountChangeSuite.scala">
+<persistable path="/progfun-recfun/src/test/scala/recfun/CountChangeSuite.scala"/>
 </file>
 </mruList>
 </workbench>
