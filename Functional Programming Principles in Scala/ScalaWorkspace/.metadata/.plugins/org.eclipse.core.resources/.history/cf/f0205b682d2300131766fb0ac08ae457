@@ -1,0 +1,13 @@
+package recfun
+
+object Worksheet {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  
+ def makeChange(remaining: Int, coins: List[Int]): Int =
+      if (coins.isEmpty) remaining
+      else if (remaining - coins.head >= 0) makeChange(remaining - coins.head, coins)
+      else makeChange(remaining, coins.tail)      //> makeChange: (remaining: Int, coins: List[Int])Int
+      
+      makeChange(4, List(3))                      //> res0: Int = 0
+  
+}

@@ -32,7 +32,5 @@ object Worksheet {
 
   sqrt(2)                                         //> res3: Double = 1.414213562373095
   sqrt(4)                                         //> res4: Double = 2.000000000000002
-  sqrt(1e-6)                                      //> res5: Double = 0.0010000000000000117
-  sqrt(1e60)                                      //> res6: Double = 1.0E30
 
 }

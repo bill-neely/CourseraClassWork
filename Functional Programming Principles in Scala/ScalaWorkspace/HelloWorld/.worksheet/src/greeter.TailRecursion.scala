@@ -10,15 +10,15 @@ object TailRecursion {;import org.scalaide.worksheet.runtime.library.WorksheetSu
   gcd(14, 21);System.out.println("""res0: Int = """ + $show(res$0));$skip(91); 
 
   def factorial_noTail(n: Int): Int =
-    if (n == 0) 1 else n * factorial_noTail(n - 1);System.out.println("""factorial_noTail: (n: Int)Int""");$skip(146); 
+    if (n == 0) 1 else n * factorial_noTail(n - 1);System.out.println("""factorial_noTail: (n: Int)Int""");$skip(151); 
 
-  def factorial(n: Int): Int = {
-    def loop(acc: Int, n: Int): Int =
+  def factorial(n: Long): Long = {
+    def loop(acc: Long, n: Long): Long =
       if (n == 0) acc
       else loop(acc * n, n - 1)
     loop(1, n)
-  };System.out.println("""factorial: (n: Int)Int""");$skip(17); val res$1 = 
+  };System.out.println("""factorial: (n: Long)Long""");$skip(17); val res$1 = 
 
-  factorial(4);System.out.println("""res1: Int = """ + $show(res$1));$skip(22); val res$2 = 
+  factorial(5);System.out.println("""res1: Long = """ + $show(res$1));$skip(22); val res$2 = 
   factorial_noTail(4);System.out.println("""res2: Int = """ + $show(res$2))}
 }

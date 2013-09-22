@@ -1,0 +1,10 @@
+package recfun
+
+object Worksheet {
+  println("Welcome to the Scala worksheet")
+  
+  def minus(x: Int): Int = x-1
+  
+  minus(2)
+  
+}

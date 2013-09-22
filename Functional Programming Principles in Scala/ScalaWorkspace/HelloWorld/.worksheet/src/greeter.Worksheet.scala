@@ -31,8 +31,6 @@ object Worksheet {;import org.scalaide.worksheet.runtime.library.WorksheetSuppor
   };System.out.println("""sqrt: (x: Double)Double""");$skip(12); val res$3 = 
 
   sqrt(2);System.out.println("""res3: Double = """ + $show(res$3));$skip(10); val res$4 = 
-  sqrt(4);System.out.println("""res4: Double = """ + $show(res$4));$skip(13); val res$5 = 
-  sqrt(1e-6);System.out.println("""res5: Double = """ + $show(res$5));$skip(13); val res$6 = 
-  sqrt(1e60);System.out.println("""res6: Double = """ + $show(res$6))}
+  sqrt(4);System.out.println("""res4: Double = """ + $show(res$4))}
 
 }
