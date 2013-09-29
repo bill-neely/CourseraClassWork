@@ -1,5 +1,0 @@
-package greeter
-
-object Hello {
-
-}

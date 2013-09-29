@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;progfun-funsets/src/test/scala/funsets/funsets_worksheet.sc&apos; to &apos;currying_worksheet.sc&apos;" description="Rename resource &apos;funsets_worksheet.sc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/scala/funsets/funsets_worksheet.sc" name="currying_worksheet.sc" stamp="1380394325614" updateReferences="true"/>
+</session>

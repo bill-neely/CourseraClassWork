@@ -1,0 +1,29 @@
+package funsets
+
+object funsets_worksheet {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  
+  
+  def sum(f: Int => Int)(a: Int, b: Int): Int = {
+        def loop(a: Int, acc: Int): Int = {
+          if (a > b) acc
+          else loop(a + 1, acc + f(a))
+        }
+        loop(a, 0)
+      }                                           //> sum: (f: Int => Int)(a: Int, b: Int)Int
+      
+  sum(x => x)(8,12)                               //> res0: Int = 50
+      
+  sum(x => x*x)(3,5)                              //> res1: Int = 50
+   
+  def product(f: Int => Int)(a: Int, b: Int): Int =  {
+        def loop(a: Int, acc: Int): Int = {
+          if (a > b) acc
+          else loop(a + 1, acc + f(a))
+        }
+        loop(a, 0)
+      }                                           //> product: (f: Int => Int)(a: Int, b: Int)Int
+      
+  product(x => x)(3,3)                            //> res2: Int = 3
+                                        
+}

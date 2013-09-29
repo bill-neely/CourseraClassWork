@@ -1,0 +1,31 @@
+package funsets
+import math.abs
+
+object Fixed_points_worksheet {
+  println("Welcome to the Scala worksheet")
+
+  val tolerance = 0.0001
+  def isCloseEnough(x: Double, y: Double) =
+    abs((x - y) / x) / x < tolerance
+
+  def fixedPoint(f: Double => Double)(firstguess: Double) = {
+    def iterate(guess: Double): Double = {
+      val next = f(guess)
+      if (isCloseEnough(guess, next)) next
+      else iterate(next)
+    }
+    iterate(firstguess)
+  }
+
+  fixedPoint(x => 1 + x / 2)(1)
+  fixedPoint(x => x * x - 3 * x + 4)(1)
+
+  def sqrt1(x: Double): Double =
+    fixedPoint(y => (y + x / y) / 2)(1.0)
+  sqrt1(9)
+
+  def averageDamp(f: Double => Double)(x: Double) = (x + f(x)) / 2
+
+  def sqrt(x: Double): Double =
+    fixedPoint(averageDamp(y => x / y))(1.0)
+}
