@@ -1,0 +1,69 @@
+package funsets
+
+object Functions_Data_worksheet {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+
+  val half = new Rational(1, 2)                   //> half  : funsets.Rational = 1/2
+  val twoFourths = new Rational(2, 4)             //> twoFourths  : funsets.Rational = 1/2
+  val twoThirds = new Rational(2, 3)              //> twoThirds  : funsets.Rational = 2/3
+  val two = new Rational(2)                       //> two  : funsets.Rational = 2/1
+
+  (half + twoThirds)                              //> res0: funsets.Rational = 7/6
+  (half - twoThirds)                              //> res1: funsets.Rational = 1/-6
+  (half * twoThirds)                              //> res2: funsets.Rational = 1/3
+  (half / twoThirds)                              //> res3: funsets.Rational = 3/4
+  (half == twoThirds)                             //> res4: Boolean = false
+  (half == twoFourths)                            //> res5: Boolean = true
+  (half < twoThirds)                              //> res6: Boolean = true
+  (twoThirds < half)                              //> res7: Boolean = false
+  (half.max(twoThirds))                           //> res8: funsets.Rational = 2/3
+  (twoThirds.max(half))                           //> res9: funsets.Rational = 2/3
+
+  val x = new Rational(1, 3)                      //> x  : funsets.Rational = 1/3
+  val y = new Rational(5, 7)                      //> y  : funsets.Rational = 5/7
+  val z = new Rational(3, 2)                      //> z  : funsets.Rational = 3/2
+  x - y - z                                       //> java.lang.IllegalArgumentException: requirement failed: denominator must be 
+                                                  //| positve
+                                                  //| 	at scala.Predef$.require(Predef.scala:233)
+                                                  //| 	at funsets.Rational.<init>(funsets.Functions_Data_worksheet.scala:31)
+                                                  //| 	at funsets.Rational.$plus(funsets.Functions_Data_worksheet.scala:39)
+                                                  //| 	at funsets.Rational.$minus(funsets.Functions_Data_worksheet.scala:41)
+                                                  //| 	at funsets.Functions_Data_worksheet$$anonfun$main$1.apply$mcV$sp(funsets
+                                                  //| .Functions_Data_worksheet.scala:25)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$$anonfun$$exe
+                                                  //| cute$1.apply$mcV$sp(WorksheetSupport.scala:76)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.redirected(W
+                                                  //| orksheetSupport.scala:65)
+                                                  //| 	at org.scalaide.worksheet.runtime.library.WorksheetSupport$.$execute(Wor
+                                                  //| ksheetSupport.scala:75)
+                                                  //| 	at funsets.Functions_Data_worksheet$.main(funsets.Functions_Data_workshe
+                                                  //| et.scala:3)
+                                                  //| 	at funsets.Functions_Data_worksheet.main(funsets.Functions_Data_w
+                                                  //| Output exceeds cutoff limit.
+  y + y
+  
+}
+
+class Rational(x: Int, y: Int) {
+  require(y > 0, "denominator must be positve")
+  def this(x: Int) = this(x, 1)
+  private def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
+  def numer = x / gcd(x, y)
+  def denom = y / gcd(x, y)
+  override def toString = numer + "/" + denom
+  def neg: Rational = new Rational(-numer, denom)
+  def +(that: Rational) =
+    new Rational(this.numer * that.denom + that.numer * this.denom, this.denom * that.denom)
+  def -(that: Rational) =
+    this + that.neg
+  def *(that: Rational) =
+    new Rational(this.numer * that.numer, this.denom * that.denom)
+  def /(that: Rational) =
+    new Rational(this.numer * that.denom, this.denom * that.numer)
+  def <(that: Rational) =
+    (this.numer * that.denom < that.numer * this.denom)
+  def ==(that: Rational) =
+    (this.numer * that.denom == this.denom * that.numer)
+  def max(that: Rational) = if (this < that) that else this
+}
+  
