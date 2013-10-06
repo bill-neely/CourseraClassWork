@@ -1,0 +1,11 @@
+package funsets
+
+object Main extends App {
+  import FunSets._
+  println(contains(singletonSet(1), 1))
+
+  println("forall: {1,2,3,4} are strictly less than 5")
+  val s1 = x => List(1, 2, 3, 4).contains(x)
+  println(forall(s1, x => x < 5))
+
+}

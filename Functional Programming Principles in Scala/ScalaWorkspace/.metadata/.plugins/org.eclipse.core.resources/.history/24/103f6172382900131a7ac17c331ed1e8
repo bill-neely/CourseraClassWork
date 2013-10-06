@@ -1,0 +1,14 @@
+package funsets
+
+object Main extends App {
+  import FunSets._
+  println(contains(singletonSet(1), 1))
+  
+  def set1: Set = x => (x >= 2) && (x <= 40) && (x % 2 == 0)
+  printSet(set1)  
+ 
+  
+  
+  
+  /** diff{1,3,4,5,7,1000} and {1,2,3,4}) */
+}

@@ -1,0 +1,8 @@
+package funsets
+
+object assignment2_workssheet {
+  type Set = Int => Boolean
+  
+  def filter(s: Set, p: Int => Boolean): Set = contains(s, p(s(elem))
+  
+}

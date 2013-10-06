@@ -14,7 +14,6 @@ import org.scalatest.junit.JUnitRunner
 @RunWith(classOf[JUnitRunner])
 class FunSetSuite extends FunSuite {
 
-
   /**
    * Link to the scaladoc - very clear and detailed tutorial of FunSuite
    *
@@ -47,30 +46,29 @@ class FunSetSuite extends FunSuite {
     assert(1 + 2 === 3)
   }
 
-  
   import FunSets._
 
   test("contains is implemented") {
     assert(contains(x => true, 100))
   }
-  
+
   /**
    * When writing tests, one would often like to re-use certain values for multiple
    * tests. For instance, we would like to create an Int-set and have multiple test
    * about it.
-   * 
+   *
    * Instead of copy-pasting the code for creating the set into every test, we can
    * store it in the test class using a val:
-   * 
+   *
    *   val s1 = singletonSet(1)
-   * 
+   *
    * However, what happens if the method "singletonSet" has a bug and crashes? Then
    * the test methods are not even executed, because creating an instance of the
    * test class fails!
-   * 
+   *
    * Therefore, we put the shared values into a separate trait (traits are like
    * abstract classes), and create an instance inside each test method.
-   * 
+   *
    */
 
   trait TestSets {
@@ -79,34 +77,120 @@ class FunSetSuite extends FunSuite {
     val s3 = singletonSet(3)
   }
 
-  /**
-   * This test is currently disabled (by using "ignore") because the method
-   * "singletonSet" is not yet implemented and the test would fail.
-   * 
-   * Once you finish your implementation of "singletonSet", exchange the
-   * function "ignore" by "test".
-   */
-  ignore("singletonSet(1) contains 1") {
-    
-    /**
-     * We create a new instance of the "TestSets" trait, this gives us access
-     * to the values "s1" to "s3". 
-     */
+  test("s1 contains 1") {
     new TestSets {
-      /**
-       * The string argument of "assert" is a message that is printed in case
-       * the test fails. This helps identifying which assertion failed.
-       */
-      assert(contains(s1, 1), "Singleton")
+      assert(contains(s1, 1), "Singleton should contain 1")
     }
   }
 
-  ignore("union contains all elements") {
+  test("s1 does not contain 9") {
     new TestSets {
-      val s = union(s1, s2)
-      assert(contains(s, 1), "Union 1")
-      assert(contains(s, 2), "Union 2")
-      assert(!contains(s, 3), "Union 3")
+      assert(!(contains(s1, 9)), "Singleton should not contain 9")
     }
+  }
+
+  test("union contains all elements") {
+    new TestSets {
+      val unionS1S2 = union(s1, s2)
+      assert(contains(unionS1S2, 1), "Union 1")
+      assert(contains(unionS1S2, 2), "Union 2")
+      assert(!contains(unionS1S2, 3), "Union 3")
+    }
+  }
+
+  test("intersect contains matching elements") {
+    new TestSets {
+      assert(contains(intersect(s1, s1), 1), "intersect s1,s1 contains 1")
+      assert(contains(intersect(singletonSet(10), singletonSet(10)), 10), "intersect of 10's contains 10")
+      assert(!contains(intersect(s1, s2), 1), "intersect s1,s2 does not contain 1")
+      assert(!contains(intersect(s1, s2), 2), "intersect s1,s2 does not contain 2")
+    }
+  }
+
+  test("diff contains differing elements") {
+    new TestSets {
+      assert(!contains(diff(s1, s1), 1), "diff s1,s1 does not contain 1")
+      assert(contains(diff(s1, s2), 1), "diff s1,s2 contains 1")
+      assert(!contains(diff(s1, s2), 2), "diff s1,s2 contains 2")
+    }
+  }
+
+  test("diff{1,3,4,5,7,1000} and {1,2,3,4}) is 5, 7, 100") {
+    def set1: Set = x => List(1, 3, 4, 5, 7, 1000).contains(x)
+    def set2: Set = x => List(1, 2, 3, 4).contains(x)
+    val theDiff = diff(set1, set2)
+    assert(!contains(theDiff, 1), "does not contain 1")
+    assert(!contains(theDiff, 2), "does not contain 2")
+    assert(!contains(theDiff, 3), "does not contain 3")
+    assert(!contains(theDiff, 4), "does not contain 4")
+    assert(contains(theDiff, 5), "contain 5")
+    assert(contains(theDiff, 7), "contain 7")
+    assert(contains(theDiff, 1000), "contain 1000")
+  }
+
+  test("filter applies a predicate") {
+    new TestSets {
+      def greaterThan2(x: Int) = x > 2
+      assert(!contains(filter(s1, greaterThan2), 1), "filter(s1,greaterThan2) does not contain 1")
+      assert(!contains(filter(s2, greaterThan2), 2), "filter(s2,greaterThan2) does not contain 2")
+      assert(contains(filter(s3, greaterThan2), 3), "filter(s3,greaterThan2) contains 3")
+      assert(!contains(filter(s3, greaterThan2), 4), "filter(s3,greaterThan2) does not contains 4")
+    }
+  }
+
+  test("forall checks all elem meet criteria < 5") {
+    val s1 = x => List(1, 2, 3, 4).contains(x)
+    assert(forall(s1, x => x < 5), "(1,2,3,4) are all strictly less than 5")
+  }
+
+  test("forall checks all elem meet criteria > 50") {
+    val s1 = x => List(51, 52, 53, 54).contains(x)
+    assert(forall(s1, x => x > 50), "(51,52,53,54) are all strictly greather than 50")
+  }
+
+  test("forall not all elem are < 5") {
+    val s1 = x => List(1, 2, 3, 4, 5, 7, 1000).contains(x)
+    assert(!forall(s1, x => x < 5), "(1,2,3,4,5,7,1000) are all strictly less than 5")
+  }
+
+  def even2to40: Set = x => (x >= 2) && (x <= 40) && (x % 2 == 0)
+  test("20 exists in even2to40") {
+    assert(exists(even2to40, x => x == 20))
+  }
+
+  test("no odd number exists in even2to40") {
+    assert(!exists(even2to40, x => x % 2 != 0))
+  }
+
+  test("simple map to negate set") {
+    val negSingleton = map(singletonSet(2), x => -x)
+    assert(contains(negSingleton, -2), "negated set should contain -2")
+  }
+
+  test("evens and 3 - from grader - contains") {
+    val evensAnd3: Set = x => x % 2 == 0 || x == 3
+    assert(contains(evensAnd3, 3))
+  }
+
+  test("evens and 3 - from grader - filter") {
+    val evensAnd3: Set = x => x % 2 == 0 || x == 3
+    assert(FunSets.toString(filter(evensAnd3, x => x == 3)) === "{3}")
+  }
+
+  test("evens and 3 - from grader - exists") {
+    val evensAnd3: Set = x => x % 2 == 0 || x == 3
+    assert(exists(evensAnd3, x => x == 3), "3 should exist")
+  }
+
+    test("map - doubler") {
+    val premap = x => List(-2, 1, 3, 4).contains(x)
+    val mapped = map(premap, x => x * 2)
+    assert(FunSets.toString(mapped) === "{-4,2,6,8}")
+  }
+    
+  test("map from grader") {
+    val premap = x => List(1, 3, 4, 5, 7, 1000).contains(x)
+    val mapped = map(premap, x => x - 1)
+    assert(FunSets.toString(mapped) === "{0,2,3,4,6,999}")
   }
 }

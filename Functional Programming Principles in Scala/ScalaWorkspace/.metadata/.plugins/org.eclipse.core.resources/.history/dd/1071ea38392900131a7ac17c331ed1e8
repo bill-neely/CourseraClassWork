@@ -1,0 +1,28 @@
+package funsets
+
+object Main extends App {
+  import FunSets._
+  println(contains(singletonSet(1), 1))
+  
+  /** diff{1,3,4,5,7,1000} and {1,2,3,4}) */
+  def set1: Set = x => List(1,3,4,5,7,1000).contains(x)
+  printSet(set1)  
+  
+  def set2: Set = x => List(1,2,3,4).contains(x)
+  printSet(set2)
+ 
+  printSet(diff(set1, set2))
+  
+
+ /** diff of {1,2,3,4} and {-1000,0} */
+  def set11: Set = x => List(1,2,3,4).contains(x)
+  printSet(set11)  
+  
+  def set12: Set = x => List(-1000,0).contains(x)
+  printSet(set12)
+ 
+  printSet(diff(set11, set12))
+  
+  
+  
+}

@@ -1,0 +1,35 @@
+package funsets
+
+object Main extends App {
+  import FunSets._
+  println(contains(singletonSet(1), 1))
+
+  def even2to40: Set = x => (x >= 2) && (x <= 40) && (x % 2 == 0)
+  printSet(even2to40)
+  println(contains(even2to40, 20))
+  println(exists(even2to40, x => x == 20))
+  
+  println("")
+  println("forall: {1,2,3,4} are strictly less than 5")
+  val s1 = x => List(1, 2, 3, 4).contains(x)
+  println("should be true --- " + forall(s1, x => x < 5))
+
+  
+  
+  println("")
+  println("map: {1,3,4,5,7,1000} = {0,2,3,4,6,999}")
+  val premap = x => List(1,3,4,5,7,1000).contains(x)
+  val mapped: Set = map(premap, x=> x - 1)
+  printSet(premap)
+  printSet(mapped)
+  println("Should be {0,2,3,4,6,999} and is " + FunSets.toString(mapped))
+  
+  
+  
+  println("")
+  println("failed test - exists & filter: even and 3")
+  val testSet: Set = x => x % 2 == 0 || x ==3
+  println("contains(testSet, 3) should be true and is " + contains(testSet,3))
+  println("filter(testSet, x == 3) should be {3} and is " + FunSets.toString(filter(testSet,x => x == 3)))
+  println("exists(testSet, x == 3) should be true and is " + exists(testSet,x => x == 3))
+}
