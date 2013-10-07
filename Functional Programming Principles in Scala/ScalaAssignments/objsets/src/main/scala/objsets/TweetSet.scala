@@ -46,7 +46,7 @@ abstract class TweetSet {
     filterAcc(p, new Empty)
 
   /**
-   * This is a helper method for `filter` that propagetes the accumulated tweets.
+   * This is a helper method for `filter` that propagates the accumulated tweets.
    */
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet
 
@@ -56,7 +56,15 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-  def union(that: TweetSet): TweetSet
+
+  def union(that: TweetSet): TweetSet = {
+    if (that.isEmpty) this
+    else incl(that.head) union that.tail
+  }
+
+  def isEmpty: Boolean
+  def head: Tweet
+  def tail: TweetSet
 
   /**
    * Returns the tweet from this set which has the greatest retweet count.
@@ -113,7 +121,9 @@ class Empty extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = acc
 
-  def union(that: TweetSet): TweetSet = that
+  def isEmpty: Boolean = true
+  def head = throw new Exception("Empty.head")
+  def tail = throw new Exception("Empty.tail")
 
   def mostRetweeted: Tweet = throw new java.util.NoSuchElementException("Empty.mostRetweeted")
   def mostRetweetedAcc(acc: Tweet) = acc
@@ -136,13 +146,16 @@ class Empty extends TweetSet {
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
-    val leftright = left.filterAcc(p, right.filterAcc(p, acc))
+    val leftFilt = left.filterAcc(p, left)
+    val rightFilt = right.filterAcc(p, right)
+    val leftright = leftFilt union rightFilt
     if (p(elem)) leftright.incl(elem)
     else leftright
   }
 
-  def union(that: TweetSet): TweetSet =
-    ((left union right) union that) incl elem
+  def isEmpty: Boolean = false
+  def head = if (left.isEmpty) elem else left.head
+  def tail = if (left.isEmpty) right else new NonEmpty(elem, left.tail, right)
 
   def mostRetweeted: Tweet = {
     mostRetweetedAcc(elem)
@@ -215,10 +228,6 @@ object GoogleVsApple {
    * A list of all tweets mentioning a keyword from either apple or google,
    * sorted by the number of retweets.
    */
-  val mrt1 = new Empty
-  val mrt2 = mrt1.incl(new Tweet("user200", "android body", 200))
-  val mrt3 = mrt2.incl(new Tweet("user201", "iphone body", 201))
-  val mrt4 = mrt3.incl(new Tweet("user199", "c body", 199))
 
   lazy val trending: TweetList = googleTweets.union(appleTweets).descendingByRetweet
 }
