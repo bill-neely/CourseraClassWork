@@ -6,7 +6,7 @@ object Video3_1_Worksheet {
   val t2 = t1 incl 7                              //> t2  : IntSet = {.1{.7.}}
   val t3 = t2 incl 9                              //> t3  : IntSet = {.1{.7{.9.}}}
   val t4 = t3 incl 5                              //> t4  : IntSet = {.1{{.5.}7{.9.}}}
-
+ 
   val ta = new NonEmpty(10, Empty, Empty)         //> ta  : NonEmpty = {.10.}
   val tb = ta incl 17                             //> tb  : IntSet = {.10{.17.}}
   val tc = tb incl 19                             //> tc  : IntSet = {.10{.17{.19.}}}

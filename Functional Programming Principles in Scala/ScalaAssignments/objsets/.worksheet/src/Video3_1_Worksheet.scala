@@ -5,8 +5,8 @@ object Video3_1_Worksheet {;import org.scalaide.worksheet.runtime.library.Worksh
   val t1 = new NonEmpty(1, Empty, Empty);System.out.println("""t1  : NonEmpty = """ + $show(t1 ));$skip(21); 
   val t2 = t1 incl 7;System.out.println("""t2  : IntSet = """ + $show(t2 ));$skip(21); 
   val t3 = t2 incl 9;System.out.println("""t3  : IntSet = """ + $show(t3 ));$skip(21); 
-  val t4 = t3 incl 5;System.out.println("""t4  : IntSet = """ + $show(t4 ));$skip(44); 
-
+  val t4 = t3 incl 5;System.out.println("""t4  : IntSet = """ + $show(t4 ));$skip(45); 
+ 
   val ta = new NonEmpty(10, Empty, Empty);System.out.println("""ta  : NonEmpty = """ + $show(ta ));$skip(22); 
   val tb = ta incl 17;System.out.println("""tb  : IntSet = """ + $show(tb ));$skip(22); 
   val tc = tb incl 19;System.out.println("""tc  : IntSet = """ + $show(tc ));$skip(22); 
