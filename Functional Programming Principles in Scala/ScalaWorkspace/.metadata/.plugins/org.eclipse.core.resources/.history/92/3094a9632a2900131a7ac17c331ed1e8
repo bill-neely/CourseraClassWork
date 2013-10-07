@@ -1,9 +1,0 @@
-package funsets
-
-object assignment2_workssheet {
-                                                  //> Welcome to the Scala worksheet
-  type Set = Int => Boolean
-  
-  def filter(s: Set, p: Int => Boolean): Set = contains(s, p(s(elem))
-  
-}

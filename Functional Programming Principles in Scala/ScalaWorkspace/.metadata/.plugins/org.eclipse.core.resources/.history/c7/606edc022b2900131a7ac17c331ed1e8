@@ -1,9 +1,0 @@
-package funsets
-
-object assignment2_workssheet {
-  type Set = Int => Boolean
-  
-  def filter(s: Set, p: Int => Boolean): Set = x => p(x)
-                                                  //> filter: (s: Int => Boolean, p: Int => Boolean)Int => Boolean
-  
-}

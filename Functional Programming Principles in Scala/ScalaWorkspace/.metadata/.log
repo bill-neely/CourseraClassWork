@@ -2879,3 +2879,27 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException
 	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
 	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
 	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+!SESSION 2013-10-06 17:32:35.857 -----------------------------------------------
+eclipse.buildId=3.0.1-vfinal-20130718-1727-Typesafe
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2013-10-06 17:39:43.540
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY org.scala-ide.sdt.core 1 0 2013-10-06 20:10:52.041
+!MESSAGE Timeout while resolving hyperlink in C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\objsets\src\main\scala\objsets\TweetSet.scala at: offset: 3808, length: 0
+
+!ENTRY org.eclipse.jdt.ui 2 0 2013-10-06 20:49:02.112
+!MESSAGE The 'Scala Completion Proposal Computer' proposal computer from the 'org.scala-ide.sdt.core' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.scala-ide.sdt.core 1 0 2013-10-06 20:49:37.660
+!MESSAGE Timeout while resolving hyperlink in C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\objsets\src\main\scala\objsets\TweetSet.scala at: offset: 6468, length: 0
+
+!ENTRY org.scala-ide.sdt.core 1 0 2013-10-06 20:49:37.662
+!MESSAGE Timeout while resolving hyperlink in C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\objsets\src\main\scala\objsets\TweetSet.scala at: offset: 6523, length: 0
+
+!ENTRY org.scala-ide.sdt.core 1 0 2013-10-06 20:49:37.675
+!MESSAGE Timeout while resolving hyperlink in C:\Users\Bill Neely\Documents\CourseraClassWork\Functional Programming Principles in Scala\ScalaAssignments\objsets\src\main\scala\objsets\TweetSet.scala at: offset: 6594, length: 0

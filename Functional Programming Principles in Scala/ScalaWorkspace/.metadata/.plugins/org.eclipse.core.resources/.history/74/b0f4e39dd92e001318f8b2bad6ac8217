@@ -1,0 +1,16 @@
+package objsets
+
+object Video3_1_Worksheet {
+  println("Welcome to the Scala worksheet")
+class Empty extends IntSet {
+def contains (x:Int): Boolean = false
+def incl(x:Int): IntSet = new nonEmpty(x, new Empty, new Empty)
+}
+
+}
+
+abstract class IntSet {
+  def incl(x: Int): IntSet
+  def contains(x: Int): Boolean
+}
+

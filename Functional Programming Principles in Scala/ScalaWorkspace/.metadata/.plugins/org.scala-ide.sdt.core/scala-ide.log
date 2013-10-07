@@ -1997,3 +1997,9 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException
 	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:339)
 	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
 2013-09-29 15:19:03,518  WARN [main] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-10-06 20:43:55,630  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-10-06 20:44:43,603  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-10-06 20:45:47,103  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-10-06 20:47:54,895  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-10-06 20:49:11,565  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-10-06 20:49:51,249  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.

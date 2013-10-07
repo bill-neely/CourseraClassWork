@@ -1,8 +1,0 @@
-package funsets
-
-object Main extends App {
-  import FunSets._
-  println(contains(singletonSet(1), 1))
-  def even2to40: Set = x => (x >= 2) && (x <= 40) && (x % 2 == 0)
-  printSet(even2to40)  
-}
