@@ -19,11 +19,19 @@ class HuffmanSuite extends FunSuite {
       assert(weight(t1) === 5)
     }
   }
+  
+  test("weight of a single Leaf") {
+    assert(weight(Leaf('a', 2)) === 2)
+    }
 
   test("chars of a larger tree") {
     new TestTrees {
       assert(chars(t2) === List('a','b','d'))
     }
+  }
+
+  test("chars of a single leaf") {
+     assert(chars(Leaf('a',2)) === List('a'))
   }
 
   test("string2chars(\"hello, world\")") {
